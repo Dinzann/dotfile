@@ -1,0 +1,4 @@
+[[opener]]
+condition = { mime = "image/*" }
+exec = "gwenview $FILE" # 或者使用 "gwenview $FILE"
+block = true
