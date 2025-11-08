@@ -70,7 +70,7 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     keys = {
-      { "<leader>e", "<CMD>NvimTreeToggle<CR>", mode = { "n" }, desc = "[NvimTree] Toggle NvimTree" },
+      { "<leader>e", "<CMD>NvimTreeToggle<CR>", mode = { "n" }, desc = "[NvimTree] 打开文件树 " },
     },
     opts = {},
   },
@@ -124,7 +124,7 @@ return {
     },
     keys = {
       -- stylua: ignore
-      { "<leader>?", function() require("which-key").show({ global = false }) end, desc = "[Which-key] Buffer Local Keymaps", },
+      { "<leader>?", function() require("which-key").show({ global = false }) end, desc = "[Which-key] 缓冲区本地键映射", },
     },
   },
 
