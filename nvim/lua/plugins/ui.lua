@@ -1,19 +1,20 @@
 return {
+
 {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
-	theme = "catppuccin"		
-	},
-	sections ={
-	lualine_a = {"mode"},
-	lualine_b = {"branch","diff","diagnostics" },
-	lualine_c = {"filename"},
-	lualine_x = {},
-	lualine_y = {"encoding","fileformat","filetype","progress"},
-	lualine_z = {"location"},
+        theme = "catppuccin"		
+        },
+        sections ={
+        lualine_a = {"mode"},
+        lualine_b = {"branch","diff","diagnostics" },
+        lualine_c = {"filename"},
+        lualine_x = {},
+        lualine_y = {"encoding","fileformat","filetype","progress"},
+        lualine_z = {"location"},
 },
-	winbar = {
+        winbar = {
         lualine_a = { "filename", },
         lualine_b = { { function() return " " end, color = "Comment", }, },
         lualine_x = { "lsp_status", },
@@ -98,23 +99,34 @@ return {
     }
 },
 
-{
-  "folke/which-key.nvim",
-  event = "VeryLazy",
-  opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  },
-  keys = {
-    {
-      "<leader>?",
-      function()
-        require("which-key").show({ global = false })
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      ---@type false | "classic" | "modern" | "helix"
+      preset = "helix",
+      win = {
+        -- no_overlap = true,
+        title = false,
+        width = 0.5,
+      },
+      -- stylua: ignore
+      spec = {
+        { "<leader>cc", group = "<CodeCompanion>", icon = "" },
+        { "<leader>s",  group = "<Snacks>"                    },
+        { "<leader>t",  group = "<Snacks> Toggle"             },
+      },
+      -- expand all nodes wighout a description
+      expand = function(node)
+        return not node.desc
       end,
-      desc = "Buffer Local Keymaps (which-key)",
+    },
+    keys = {
+      -- stylua: ignore
+      { "<leader>?", function() require("which-key").show({ global = false }) end, desc = "[Which-key] Buffer Local Keymaps", },
     },
   },
-}
+
 
 }
