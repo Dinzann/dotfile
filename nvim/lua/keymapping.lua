@@ -15,3 +15,4 @@ vim.keymap.set({ "n", "x", "o" }, "<S-L>", "$", { desc = "End of line" })
 
 vim.keymap.set("n", "<A-z>", "<CMD>set wrap!<CR>", { desc = "Toggle line wrap" })
 
+
