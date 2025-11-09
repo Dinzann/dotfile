@@ -120,28 +120,28 @@ return {
 
     -- stylua: ignore
     keys = {
-      { "<A-w>", function() require("snacks").bufdelete() end, desc = "[Snacks] Delete buffer" },
-      { "<leader>si", function() require("snacks").image.hover() end, desc = "[Snacks] Display image" },
-      { "<A-i>", function() require("snacks").terminal() end, desc = "[Snacks] Toggle terminal", mode = {"n",  "t"} },
+      { "<A-w>", function() require("snacks").bufdelete() end, desc = "[Snacks] 删除缓冲区" },
+      { "<leader>si", function() require("snacks").image.hover() end, desc = "[Snacks] 显示图片" },
+      { "<A-i>", function() require("snacks").terminal() end, desc = "[Snacks] 切换终端", mode = {"n",  "t"} },
       -- Notification
-      { "<leader>sn", function() require("snacks").picker.notifications() end, desc = "[Snacks] Notification history" },
-      { "<leader>n", function() require("snacks").notifier.show_history() end, desc = "[Snacks] Notification history" },
-      { "<leader>un", function() require("snacks").notifier.hide() end, desc = "[Snacks] Dismiss all notifications" },
+      { "<leader>sn", function() require("snacks").picker.notifications() end, desc = "[Snacks] 通知历史" },
+      { "<leader>n", function() require("snacks").notifier.show_history() end, desc = "[Snacks] 通知历史" },
+      { "<leader>un", function() require("snacks").notifier.hide() end, desc = "[Snacks] 清除所有通知" },
       -- Top Pickers & Explorer
-      { "<leader><space>", function() require("snacks").picker.smart() end, desc = "[Snacks] Smart find files" },
+      { "<leader><space>", function() require("snacks").picker.smart() end, desc = "[Snacks] 智能查找文件" },
       { "<leader>,", function() require("snacks").picker.buffers() end, desc = "[Snacks] Buffers" },
-      { "<leader>sn", function() require("snacks").picker.notifications() end, desc = "[Snacks] Notification history" },
+      { "<leader>sn", function() require("snacks").picker.notifications() end, desc = "[Snacks] 通知历史" },
       -- find
-      { "<leader>sb", function() require("snacks").picker.buffers() end, desc = "[Snacks] Buffers" },
-      { "<leader>sf", function() require("snacks").picker.files() end, desc = "[Snacks] Find files" },
-      { "<leader>sp", function() require("snacks").picker.projects() end, desc = "[Snacks] Projects" },
-      { "<leader>sr", function() require("snacks").picker.recent() end, desc = "[Snacks] Recent" },
+      { "<leader>sb", function() require("snacks").picker.buffers() end, desc = "[Snacks] 缓冲区" },
+      { "<leader>sf", function() require("snacks").picker.files() end, desc = "[Snacks] 查找文件" },
+      { "<leader>sp", function() require("snacks").picker.projects() end, desc = "[Snacks] 项目" },
+      { "<leader>sr", function() require("snacks").picker.recent() end, desc = "[Snacks] 最近文件" },
       -- git
       { "<C-g>", function() require("snacks").lazygit() end, desc = "[Snacks] Lazygit" },
-      { "<leader>ggl", function() require("snacks").picker.git_log() end, desc = "[Snacks] Git log" },
-      { "<leader>ggd", function() require("snacks").picker.git_diff() end, desc = "[Snacks] Git diff" },
-      { "<leader>ggb", function() require("snacks").git.blame_line() end, desc = "[Snacks] Git blame line" },
-      { "<leader>ggB", function() require("snacks").gitbrowse() end, desc = "[Snacks] Git browse" },
+      { "<leader>ggl", function() require("snacks").picker.git_log() end, desc = "[Snacks] Git 日志" },
+     -- { "<leader>ggd", function() require("snacks").picker.git_diff() end, desc = "[Snacks] Git diff" },
+      { "<leader>ggb", function() require("snacks").git.blame_line() end, desc = "[Snacks] Git 信息" },
+      { "<leader>ggB", function() require("snacks").gitbrowse() end, desc = "[Snacks] Git 打开浏览器" },
       -- Grep
       -- { "<leader>sb", function() require("snacks").picker.lines() end, desc = "[Snacks] Buffer lines" },
       -- { "<leader>sB", function() require("snacks").picker.grep_buffers() end, desc = "[Snacks] Grep open buffers" },
@@ -180,8 +180,8 @@ return {
       { "]]", function() require("snacks").words.jump(vim.v.count1) end, desc = "[Snacks] Next Reference", mode = { "n", "t" } },
       { "[[", function() require("snacks").words.jump(-vim.v.count1) end, desc = "[Snacks] Prev Reference", mode = { "n", "t" } },
       -- Zen mode
-      { "<leader>z", function() require("snacks").zen() end, desc = "[Snacks] Toggle Zen Mode" },
-      { "<leader>Z", function() require("snacks").zen.zoom() end, desc = "[Snacks] Toggle Zoom" },
+      { "<leader>z", function() require("snacks").zen() end, desc = "[Snacks] 切换禅模式" },
+      { "<leader>Z", function() require("snacks").zen.zoom() end, desc = "[Snacks] 切换缩放" },
     },
 
     init = function()
