@@ -34,7 +34,17 @@ return {
       { icon = " ", key = "s", desc = "Restore Session", section = "session" },
       { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
       { icon = " ", key = "q", desc = "Quit", action = ":qa" },
-    },
+
+      --中文翻译版
+      --{ icon = " ", key = "f", desc = "查找文件", action = ":lua Snacks.dashboard.pick('files')" },
+      --{ icon = " ", key = "n", desc = "新建文件", action = ":ene | startinsert" },
+      --{ icon = " ", key = "g", desc = "查找文本", action = ":lua Snacks.dashboard.pick('live_grep')" },
+      --{ icon = " ", key = "r", desc = "最近的文件", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+      --{ icon = " ", key = "c", desc = "配置", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
+      --{ icon = " ", key = "s", desc = "恢复会话", section = "session" },
+      --{ icon = "󰒲 ", key = "L", desc = "Lazy管理", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
+      --{ icon = " ", key = "q", desc = "退出", action = ":qa" }, 
+	},
     -- Used by the `header` section
     header = [[
 ██████╗ ██╗███╗   ██╗███████╗ █████╗ ███╗   ██╗███╗   ██╗

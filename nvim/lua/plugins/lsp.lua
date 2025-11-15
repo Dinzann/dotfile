@@ -105,6 +105,14 @@ return {
         },
       },
     },
-  }
+  },
   -- { "folke/neodev.nvim", enabled = false }, -- make sure to uninstall or disable neodev.nvim
+{
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+},
+
 }
