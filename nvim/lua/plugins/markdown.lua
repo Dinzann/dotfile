@@ -1,5 +1,6 @@
 return {
-{ 'ryleelyman/latex.nvim',
+{ 
+   "ryleelyman/latex.nvim",
    opts = {},
 },
 

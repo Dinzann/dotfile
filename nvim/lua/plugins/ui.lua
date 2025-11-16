@@ -1,7 +1,7 @@
 return {
 
 {
-    'nvim-lualine/lualine.nvim',
+    "nvim-lualine/lualine.nvim",
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
         theme = "catppuccin"		
@@ -28,7 +28,8 @@ return {
 
 
 
-{'romgrk/barbar.nvim',
+{
+    "romgrk/barbar.nvim",
     dependencies = {
       'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
       'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
