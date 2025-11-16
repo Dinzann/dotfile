@@ -6,7 +6,9 @@ return {
    {"obsidian-nvim/obsidian.nvim",enabled = false, },
 
    --主题
+   {"zaldih/themery.nvim",enabled = true,},  --主题切换控制
    {"catppuccin/nvim",enabled = true, },
+   {"vague-theme/vague.nvim",enabled = true,},
 
    --自动补全 
    { "saghen/blink.cmp",enabled = true,},

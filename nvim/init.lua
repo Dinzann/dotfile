@@ -18,6 +18,8 @@ vim.cmd([[ highlight! link NotifyBackground NormalFloat ]])
 vim.g.neovide_opacity = 0.8
 vim.g.neovide_normal_opacity = 1.0
 
+--主题
+
 vim.keymap.set("n","<leader>L","<CMD>Lazy<CR>", { desc = "[Lazy] 打开Lazy插件管理"})
 
 
