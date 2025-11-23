@@ -48,7 +48,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = Catppuccin Frappe
+theme = noctalia
+
 
 font-family = "ComicShannsMono Nerd Font"
 font-size   = 14
@@ -78,3 +79,7 @@ mouse-hide-while-typing        = true
 window-vsync                   = true
 background-opacity             = 0.9
 background-blur                = true
+
+
+
+
