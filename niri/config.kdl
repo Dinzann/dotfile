@@ -265,6 +265,10 @@ window-rule {
     match app-id="neovide"
     open-maximized true
 }
+window-rule {
+    match title="wiliwili"
+    open-maximized true
+}
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
