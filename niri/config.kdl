@@ -261,6 +261,10 @@ window-rule {
     default-column-width { fixed 800; } // 设置浮动窗口的初始宽度
     default-window-height { fixed 600; } // 设置浮动窗口的初始高度
 }
+window-rule {
+    match app-id="neovide"
+    open-maximized true
+}
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
