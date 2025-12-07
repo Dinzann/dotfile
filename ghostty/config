@@ -48,10 +48,11 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = noctalia
+#theme = noctalia
 
 
-font-family = "ComicShannsMono Nerd Font"
+#font-family = "ComicShannsMono Nerd Font"
+font-family = "JetBriansMono Nerd Font"
 font-size   = 14
 font-thicken = true
 # 禁用编程连字，确保字符独立显示
