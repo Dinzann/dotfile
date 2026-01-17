@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Fonts]
+"Microsoft YaHei (TrueType)"="msyh.ttc"
+"Microsoft YaHei Bold (TrueType)"="msyhbd.ttc"
+"Microsoft YaHei Light (TrueType)"="msyhl.ttc"
