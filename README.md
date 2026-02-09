@@ -75,6 +75,6 @@ starship.toml
 如果你也想使用这些配置，可以克隆本仓库并运行安装脚本（如有）或手动软链接到对应目录。
 bash
 
+# 运行安装脚本或手动链接
 git clone https://github.com/Dinzann/dotfiles.git
 cd dotfiles
-# 运行安装脚本或手动链接
