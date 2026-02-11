@@ -1,5 +1,2 @@
 [flavor]
-# dark = "dracula"
-# dark = "nord"
-# dark = "everforest-medium"
 dark = "catppuccin-mocha"
