@@ -1,7 +1,24 @@
-[plugin]
-deps = []
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "88990a6"
+hash = "270915fa8282a19908449530ff66f7e2"
+
+[[plugin.deps]]
+use = "llanosrocas/yaziline"
+rev = "d9cc2cb"
+hash = "b6073aadf2f9a1d5389a6d389f33f69c"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "88990a6"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "eca1861"
+hash = "e519d894e94ded741e06aae4d4775981"
 
 [[flavor.deps]]
-use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "2d73b79"
-hash = "86f1eb7e792533c80b34cdff4e191f41"
+use = "AdithyanA2005/nord"
+rev = "bdf0bd4"
+hash = "816970e00d643d3e8213b430d2148aec"
