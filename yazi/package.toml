@@ -22,3 +22,18 @@ hash = "e519d894e94ded741e06aae4d4775981"
 use = "AdithyanA2005/nord"
 rev = "bdf0bd4"
 hash = "816970e00d643d3e8213b430d2148aec"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "4c57537"
+hash = "8589ae0231756a9daf9c072f31b1fe0"
+
+[[flavor.deps]]
+use = "Chromium-3-Oxide/everforest-medium"
+rev = "0158f0f"
+hash = "a7c36abf0b13289aceb1c20a17c6a63e"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "4c57537"
+hash = "8eabb4e88096f10905a6df62cfaadbf4"
