@@ -15,16 +15,20 @@ export EDITOR='nvim'
 
 # 绑定快捷键
 alias n='nvim'
-alias c='clear'
 alias fetch='fastfetch'
 alias ls='eza --icons'
 alias ll='eza -l --icons'
+alias tree='eza --tree --icons'
+alias ..='z ..'
 
 # starship 配置
 eval "$(starship init zsh)"
 
 # zoxide 配置
 eval "$(zoxide init zsh)"
+
+# fzf 配置
+source <(fzf --zsh)
 
 # yazi 配置
 function y() {
