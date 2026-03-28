@@ -181,9 +181,13 @@ on-mode-changed = []
 if.app-id = 'net.kovidgoyal.kitty'
 run = 'move-node-to-workspace 1'
 
-# Systm
+# System
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
 
 # Browser
@@ -199,5 +203,5 @@ run = ['layout floating', 'move-node-to-workspace Q']
 # Game
 [[on-window-detected]]
 if.app-id = 'com.valvesoftware.steam'
-run = 'move-node-to-workspace S'
+run = ['layout floating', 'move-node-to-workspace S']
 
