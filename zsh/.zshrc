@@ -30,6 +30,9 @@ eval "$(zoxide init zsh)"
 # fzf 配置
 source <(fzf --zsh)
 
+# bat 配置
+export BAT_THEME="Catppuccin Mocha"
+
 # bob 配置
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
