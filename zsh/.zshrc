@@ -52,4 +52,14 @@ alias python="/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14"
 # zsh 插件
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+ if type brew &>/dev/null; then
+     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+     autoload -Uz compinit
+     compinit
+    fi
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
