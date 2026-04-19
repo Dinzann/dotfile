@@ -13,7 +13,7 @@ export HOMEBREW_NO_ENV_HINTS="1"
 export EDITOR='nvim'
 
 # 绑定快捷键
-alias n='nvim'
+alias nv='nvim'
 alias fetch='fastfetch'
 alias ls='eza --icons'
 alias ll='eza -l --icons'
