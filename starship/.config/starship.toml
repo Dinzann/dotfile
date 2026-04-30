@@ -48,7 +48,7 @@ disabled = true
 # left
 # ------------------------------------------
 
-[character] 
+[character] 
 success_symbol = '[](bold green_bright)'
 error_symbol = '[](bold red_bright)'
 
@@ -131,7 +131,7 @@ version_format = 'v${major}.${minor}'
 # Blacks. Not in base Nord.
 black0 = '#191D24'
 black1 = '#1E222A'
-# Slightly darker than bg.  Very useful for certain popups
+# Slightly darker than bg.  Very useful for certain popups
 black2 = '#222630'
 
 # Grays
@@ -189,3 +189,4 @@ green_dim = '#97B67C'
 magenta_base = '#B48EAD'
 magenta_bright = '#BE9DB8'
 magenta_dim = '#A97EA1'
+
