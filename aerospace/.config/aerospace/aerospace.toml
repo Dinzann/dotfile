@@ -145,6 +145,7 @@ on-mode-changed = []
     alt-q = 'workspace Q'
     alt-s = 'workspace S'
     alt-w = 'workspace W'
+    alt-c = 'workspace C'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -197,6 +198,11 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
+
+# Proxy
+[[on-window-detected]]
+if.app-id = 'com.west2online.ClashX'
+run = [ 'layout floating', 'move-node-to-workspace C']
 
 # Browser
 [[on-window-detected]]

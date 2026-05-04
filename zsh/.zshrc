@@ -21,6 +21,30 @@ alias la='eza -la --icons'
 alias lt='eza --tree --icons'
 alias ..='z ..'
 
+# --- Proxy Settings ---
+# 开启代理
+proxy_on() {
+    export http_proxy="http://127.0.0.1:7890"
+    export https_proxy="http://127.0.0.1:7890"
+    export ALL_PROXY="socks5://127.0.0.1:7890"
+    echo "终端代理已开启"
+}
+
+# 关闭代理
+proxy_off() {
+    unset http_proxy
+    unset https_proxy
+    unset ALL_PROXY
+    echo "终端代理已关闭"
+}
+
+# 检查当前状态
+proxy_status() {
+    echo "HTTP Proxy:  $http_proxy"
+    echo "HTTPS Proxy: $https_proxy"
+    echo "ALL Proxy:   $ALL_PROXY"
+}
+
 # starship 配置
 eval "$(starship init zsh)"
 
