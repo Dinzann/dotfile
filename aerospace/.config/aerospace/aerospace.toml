@@ -51,8 +51,7 @@ automatically-unhide-macos-hidden-apps = false
 # even when they are invisible.
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "Q", "S"]
-
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "Q", "S", "W", "C", "D"]
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
@@ -146,6 +145,7 @@ on-mode-changed = []
     alt-s = 'workspace S'
     alt-w = 'workspace W'
     alt-c = 'workspace C'
+    alt-d = 'workspace D'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -160,6 +160,8 @@ on-mode-changed = []
     alt-shift-q = 'move-node-to-workspace Q'
     alt-shift-s = 'move-node-to-workspace S'
     alt-shift-w = 'move-node-to-workspace W'
+    alt-shift-c = 'move-node-to-workspace C'
+    alt-shift-d = 'move-node-to-workspace D'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -203,6 +205,11 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.west2online.ClashX'
 run = [ 'layout floating', 'move-node-to-workspace C']
+
+# Downloads
+[[on-window-detected]]
+if.app-id = 'net.mayswind.ariang'
+run = [ 'layout floating', 'move-node-to-workspace D']
 
 # Browser
 [[on-window-detected]]
