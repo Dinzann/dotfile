@@ -1,192 +1,311 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = true
+[aws]
+symbol = " "
 
-palette = 'nordic'
+[azure]
+symbol = " "
 
-format = """
-[╭─](bold green_bright)\
-$nix_shell\
-$username\
-$hostname\
-$localip\
-$shlvl\
-$directory\
-$git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
-$git_status\
-$direnv\
-$env_var\
-$custom\
-$cmd_duration\
-$jobs\
-$os\
-$container\
-$netns\
-$shell\
-$fill\
-$all\
-$line_break\
-[╰─](bold green_bright)\
-$character\
-$status\
-$sudo"""
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+unknown_symbol = "󰂑 "
+empty_symbol = "󰂎 "
 
-[fill]
-symbol = ' '
+[buf]
+symbol = " "
+
+[bun]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[cobol]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[container]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
 
 [direnv]
-disabled = true
-
-[package]
-disabled = true
-
-
-
-# left
-# ------------------------------------------
-
-[character] 
-success_symbol = '[](bold green_bright)'
-error_symbol = '[](bold red_bright)'
-
-[cmd_duration]
-format = ' [ $duration](bold yellow_bright) '
-show_milliseconds = true
+symbol = " "
 
 [directory]
-truncation_symbol = ''
-read_only = " "
-style = 'bold cyan_bright dimmed'
-
-[git_branch]
-format = '[$symbol$branch(:$remote_branch)](bold magenta_bright dimmed)'
-
-[git_status]
-style = 'bold magenta_bright dimmed'
-
-[nix_shell]
-format = '[ ](bold white0_reduce_blue)'
-
-[status]
-disabled = false
-format = '[$status](bold red_base) '
-
-[sudo]
-disabled = false
-format = '[ sudo: ](bold red_bright)'
-
-# right
-# ------------------------------------------
+read_only = " 󰌾"
 
 [docker_context]
-format = ' [ $context](bold blue1) '
+symbol = " "
 
 [dotnet]
-format = '[ ($version )](bold blue0) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[erlang]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fortran]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = "󱇶 "
+
+[gleam]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
 
 [golang]
-format = '[ $version](bold cyan_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
 
 [gradle]
-format = '[ ($version)](bold green_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[helm]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
 
 [java]
-format = '[ ${version}](bold red_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[kubernetes]
+symbol = "󱃾 "
 
 [lua]
-format = '[ $version](bold yellow_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[maven]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[mojo]
+symbol = "󰈸 "
+
+[nats]
+symbol = " "
+
+[netns]
+symbol = "󰛳 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
 
 [nodejs]
-format = ' [ ($version)](bold green_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[odin]
+symbol = "󰟢 "
+
+[opa]
+symbol = " "
+
+[openstack]
+symbol = " "
+
+[os.symbols]
+AIX = " "
+AlmaLinux = " "
+Alpaquita = " "
+Alpine = " "
+ALTLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+Bluefin = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = " "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = " "
+InstantOS = " "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = " "
+OpenCloudOS = " "
+openEuler = " "
+openSUSE = " "
+OracleLinux = "󰺡 "
+PikaOS = " "
+Pop = " "
+Raspbian = " "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+Redox = "󰀘 "
+RockyLinux = " "
+Solus = " "
+SUSE = " "
+Ubuntu = " "
+Ultramarine = " "
+Unknown = " "
+Uos = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
 
 [pulumi]
-format = ' [󰆦 ($username@)$stack](bold yellow_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[purescript]
+symbol = " "
 
 [python]
-format = ' [ ${pyenv_prefix}(${version} )(\($virtualenv\) )](bold green_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
+
+[raku]
+symbol = "󱖊 "
+
+[red]
+symbol = "󱍼 "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
 
 [rust]
-format = ' [󱘗 $version](bold orange_bright) '
-version_format = 'v${major}.${minor}'
+symbol = "󱘗 "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = "󰹍 "
+
+[singularity]
+symbol = " "
+
+[solidity]
+symbol = " "
+
+[spack]
+symbol = " "
+
+[status]
+symbol = " "
+
+[sudo]
+symbol = " "
+
+[swift]
+symbol = " "
 
 [terraform]
-format = ' [󰆩 $workspace](bold magenta_bright) '
-version_format = 'v${major}.${minor}'
+symbol = " "
 
-# Palette
-# ------------------------------------------
-[palettes.nordic]
+[vlang]
+symbol = " "
 
-# Blacks. Not in base Nord.
-black0 = '#191D24'
-black1 = '#1E222A'
-# Slightly darker than bg.  Very useful for certain popups
-black2 = '#222630'
+[typst]
+symbol = " "
 
-# Grays
-# This color is used on their website's dark theme.
-gray0 = '#242933'
-# Polar Night.
-gray1 = '#2E3440'
-gray2 = '#3B4252'
-gray3 = '#434C5E'
-gray4 = '#4C566A'
+[vagrant]
+symbol = " "
 
-# A light blue/gray.
-# From @nightfox.nvim.
-gray5 = '#60728A'
+[xmake]
+symbol = " "
 
-# Dim white.
-# default fg, has a blue tint.
-white0_normal = '#BBC3D4'
-# less blue tint
-white0_reduce_blue = '#C0C8D8'
+[zig]
+symbol = " "
 
-# Snow storm.
-white1 = '#D8DEE9'
-white2 = '#E5E9F0'
-white3 = '#ECEFF4'
-
-# Frost.
-blue0 = '#5E81AC'
-blue1 = '#81A1C1'
-blue2 = '#88C0D0'
-
-cyan_base = '#8FBCBB'
-cyan_bright = '#9FC6C5'
-cyan_dim = '#80B3B2'
-
-# Aurora.
-# These colors are used a lot, so we need variations for them.
-# Base colors are from original Nord palette.
-red_base = '#BF616A'
-red_bright = '#C5727A'
-red_dim = '#B74E58'
-
-orange_base = '#D08770'
-orange_bright = '#D79784'
-orange_dim = '#CB775D'
-
-yellow_base = '#EBCB8B'
-yellow_bright = '#EFD49F'
-yellow_dim = '#E7C173'
-
-green_base = '#A3BE8C'
-green_bright = '#B1C89D'
-green_dim = '#97B67C'
-
-magenta_base = '#B48EAD'
-magenta_bright = '#BE9DB8'
-magenta_dim = '#A97EA1'
-
+[character]
+success_symbol = '[➜](bold green)'
