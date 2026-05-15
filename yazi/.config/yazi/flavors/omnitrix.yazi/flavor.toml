@@ -24,6 +24,12 @@ border_style  = { fg = "#b5c4ff" }
 
 # : ]]]
 
+[git]
+unknown_sign  = " "
+modified_sign = "M"
+deleted_sign  = "D"
+clean_sign    = "✔"
+
 
 # : Indicator [[[
 
