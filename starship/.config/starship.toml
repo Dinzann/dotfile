@@ -307,5 +307,5 @@ symbol = " "
 [zig]
 symbol = " "
 
-[character]
-success_symbol = '[➜](bold green)'
+# [character]
+# success_symbol = '[➜](bold green)'
