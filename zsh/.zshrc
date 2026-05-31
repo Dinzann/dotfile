@@ -96,4 +96,5 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+# zsh 主题
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
