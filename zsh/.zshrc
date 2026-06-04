@@ -20,6 +20,7 @@ alias ll='eza -l --icons'
 alias la='eza -la --icons'
 alias lt='eza --tree --icons'
 alias ..='z ..'
+alias pipes='pipes.sh -p 3 -R'
 
 # Downlaods setting
 aria2_on() {
