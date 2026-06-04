@@ -197,7 +197,8 @@ run = 'layout floating'
 
 # Proxy
 [[on-window-detected]]
-if.app-id = 'com.west2online.ClashX'
+# if.app-id = 'com.west2online.ClashX'
+if.app-id = 'com.clashfx.app'
 run = [ 'layout floating', 'move-node-to-workspace C']
 
 # Downloads
