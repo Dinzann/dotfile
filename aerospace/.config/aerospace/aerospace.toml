@@ -221,7 +221,30 @@ run = ['layout floating', 'move-node-to-workspace Q']
 if.app-id = 'org.ryujinx.Ryujinx'
 run = ['layout floating', 'move-node-to-workspace G']
 
+[[on-window-detected]]
+if.app-id = 'com.moonsworth.client'
+run = ['layout floating', 'move-node-to-workspace G']
+
 # Video
 [[on-window-detected]]
 if.app-id = 'cn.xfangfang.wiliwili'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'com.tencent.tenvideo'
+run = 'layout floating'
+
+# IDE
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+if.window-title-regex-substring = 'Zed — Settings'
+run = 'layout floating'
+
+# Tool
+[[on-window-detected]]
+if.app-id = 'net.freemacsoft.AppCleaner'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'org.localsend.localsendApp'
+run = 'layout floating'
