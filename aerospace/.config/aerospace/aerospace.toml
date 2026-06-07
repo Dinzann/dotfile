@@ -140,6 +140,7 @@ on-mode-changed = []
     alt-w = 'workspace W'
     alt-c = 'workspace C'
     alt-d = 'workspace D'
+    alt-e = 'workspace E'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -156,6 +157,7 @@ on-mode-changed = []
     alt-shift-w = 'move-node-to-workspace W'
     alt-shift-c = 'move-node-to-workspace C'
     alt-shift-d = 'move-node-to-workspace D'
+    alt-shift-e = 'move-node-to-workspace E'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -234,11 +236,16 @@ run = 'move-node-to-workspace W'
 if.app-id = 'com.tencent.tenvideo'
 run = 'layout floating'
 
-# IDE
+#IDE
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
 if.window-title-regex-substring = 'Zed — Settings'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+if.window-title-regex-substring = '^((?!Zed — Settings).)*$' # 正则表达式：排除设置窗口
+run = 'move-node-to-workspace E'
 
 # Tool
 [[on-window-detected]]
