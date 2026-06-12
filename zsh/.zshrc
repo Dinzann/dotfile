@@ -21,6 +21,7 @@ alias la='eza -la --icons'
 alias lt='eza --tree --icons'
 alias ..='z ..'
 alias pipes='pipes.sh -p 3 -R'
+alias clock='tty-clock -c'
 
 # Downlaods setting
 aria2_on() {
@@ -99,3 +100,9 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # zsh 主题
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
+# 每次显示提示符前，强行将光标设置回闪烁的直线
+_reset_cursor_to_beam() {
+    echo -ne '\e[5 q'
+}
+add-zsh-hook precmd _reset_cursor_to_beam

@@ -55,7 +55,7 @@ preventSleepEnabled = false
 updateChecksEnabled = true
 
 [gestures]
-fingerCount = 3
+fingerCount = 4
 invertDirection = true
 mouseResizeModifierKey = "option"
 scrollEnabled = true
@@ -69,7 +69,7 @@ monitorOrder = []
 
 [niri]
 alwaysCenterSingleColumn = true
-centerFocusedColumn = "always"
+centerFocusedColumn = "onOverflow"
 columnWidthPresets = [0.3333333333333333, 0.5, 0.6666666666666666]
 defaultColumnWidth = 0.5
 infiniteLoop = false
@@ -79,7 +79,7 @@ singleWindowAspectRatio = "none"
 [quakeTerminal]
 animationDuration = 0.2
 autoHide = false
-enabled = true
+enabled = false
 heightPercent = 50.0
 monitorMode = "focusedWindow"
 opacity = 1.0
@@ -88,8 +88,8 @@ widthPercent = 50.0
 
 [statusBar]
 showAppNames = false
-showWorkspaceName = false
-useWorkspaceId = false
+showWorkspaceName = true
+useWorkspaceId = true
 
 [workspaceBar]
 backgroundOpacity = 0.1
@@ -98,12 +98,12 @@ enabled = true
 height = 24.0
 hideEmptyWorkspaces = false
 labelFontSize = 12.0
-notchAware = true
+notchAware = false
 position = "overlappingMenuBar"
 reserveLayoutSpace = false
 showFloatingWindows = false
 showLabels = true
-windowLevel = "popup"
+windowLevel = "status"
 xOffset = 0.0
 yOffset = 0.0
 
@@ -205,6 +205,16 @@ bundleId = "app.zen-browser.zen"
 id = "C135AE3A-4E79-490F-9EB5-44C54B8626D2"
 minHeight = 838.0
 minWidth = 1408.0
+
+[[appRules]]
+bundleId = "com.apple.finder"
+id = "7EEBCD86-874A-4DF9-914B-1312E2A32A79"
+layout = "float"
+
+[[appRules]]
+bundleId = "net.freemacsoft.AppCleaner"
+id = "01903A8A-BF75-4426-BDAF-5A5CF3CF9E2D"
+layout = "float"
 
 [[hotkeys]]
 binding = "Hyper+1"
