@@ -1,0 +1,4 @@
+[[manager.prepend_keymap]]
+on   = [ "e" ]
+run  = "plugin archive --args=extract"
+desc = "Extract archive"
