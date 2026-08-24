@@ -36,9 +36,9 @@ aria2_off() {
 # --- Proxy Settings ---
 # 开启代理
 proxy_on() {
-    export http_proxy="http://127.0.0.1:7890"
-    export https_proxy="http://127.0.0.1:7890"
-    export ALL_PROXY="socks5://127.0.0.1:7890"
+    export http_proxy="http://127.0.0.1:7897"
+    export https_proxy="http://127.0.0.1:7897"
+    export ALL_PROXY="socks5://127.0.0.1:7897"
     echo "终端代理已开启"
 }
 

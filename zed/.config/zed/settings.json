@@ -19,7 +19,7 @@
     "provider": "none",
   },
   "buffer_font_family": "JetBrains Mono",
-  "ui_font_family": "Maple Mono NF CN",
+  "ui_font_family": "JetBrains Mono",
   "restore_on_startup": "launchpad",
   "project_panel": {
     "dock": "right",
