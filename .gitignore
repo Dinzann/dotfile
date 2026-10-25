@@ -1,0 +1,3 @@
+.DS_Store
+# Separate repo (github.com/Dinzann/Nix-darwin-config); cloned into place for stow
+/nix-darwin/
