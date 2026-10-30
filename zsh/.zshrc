@@ -23,16 +23,6 @@ alias ..='z ..'
 alias pipes='pipes.sh -p 3 -R'
 alias clock='tty-clock -c'
 
-# Downlaods setting
-aria2_on() {
-    launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.aria2.plist
-}
-
-aria2_off() {
-    launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.aria2.plist
-}
-
-
 # --- Proxy Settings ---
 # 开启代理
 proxy_on() {

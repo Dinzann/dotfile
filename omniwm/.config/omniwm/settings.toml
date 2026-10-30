@@ -100,6 +100,7 @@ centerFocusedColumn = "always"
 containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666]
 edgeGaps = true
 infiniteLoop = false
+resizeStepPercent = 5
 singleWindowFit = "1920x1080"
 visibleContainerCount = 2
 
@@ -315,6 +316,13 @@ bundleId = "com.apple.Safari"
 id = "161E5EDD-F727-438A-B59A-4D1AEF2AC221"
 minHeight = 860.0
 minWidth = 1398.0
+
+[[appRules]]
+axRole = "AXWindow"
+axSubrole = "AXStandardWindow"
+bundleId = "com.widgetidle.app"
+id = "B33BA3F6-2DC7-427A-A7D6-50F5BC94E813"
+layout = "float"
 
 [[hotkeys]]
 binding = "Unassigned"
