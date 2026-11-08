@@ -59,8 +59,8 @@ source <(fzf --zsh)
 # bat 配置
 export BAT_THEME="Catppuccin Mocha"
 
-# bob 配置
-export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+# bob 配置 (macOS 默认安装位置)
+export PATH="$HOME/Library/Application Support/bob/nvim-bin:$PATH"
 
 # yazi 配置
 function y() {
