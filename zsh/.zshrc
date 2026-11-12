@@ -47,6 +47,10 @@ proxy_status() {
     echo "ALL Proxy:   $ALL_PROXY"
 }
 
+# 语言配置
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+
 # starship 配置
 eval "$(starship init zsh)"
 
