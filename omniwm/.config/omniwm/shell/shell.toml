@@ -5,6 +5,7 @@ profile = "celestial"
 [profiles.celestial]
 center = ["active-window"]
 leading = ["apple-menu", "app-menu", "omniwm", "workspaces", "scratchpads"]
+scheme = "tonalSpot"
 theme = "wallpaper"
 trailing = ["media", "notifications", "volume", "status", "control-center", "system-stats", "clock", "power"]
 
