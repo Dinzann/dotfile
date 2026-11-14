@@ -57,7 +57,6 @@ defaultLayoutType = "niri"
 hotkeysEnabled = true
 hyperKeyModifiers = "Control+Option+Shift+Command"
 ipcEnabled = false
-language = "zh-Hans"
 preventSleepEnabled = false
 systemHyperTrigger = "None"
 updateChecksEnabled = true
