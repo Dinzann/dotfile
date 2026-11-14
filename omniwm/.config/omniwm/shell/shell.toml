@@ -1,0 +1,28 @@
+profile = "celestial"
+
+[profiles]
+
+[profiles.celestial]
+center = ["active-window"]
+leading = ["apple-menu", "app-menu", "omniwm", "workspaces", "scratchpads"]
+theme = "wallpaper"
+trailing = ["media", "notifications", "volume", "status", "control-center", "system-stats", "clock", "power"]
+
+[profiles.celestial.island]
+fullscreen = "hide"
+
+[profiles.celestial.widgets]
+
+[profiles.celestial.widgets.clock]
+date = true
+icon = false
+
+[profiles.celestial.workspaceBar]
+fullWidth = true
+fullWidthNotchMode = "rightOfNotch"
+height = 40.0
+position = "left"
+reserveLayoutSpace = true
+solidBlackBackground = false
+transparentBackground = false
+windowLevel = "status"
