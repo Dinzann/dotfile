@@ -4,10 +4,10 @@ profile = "celestial"
 
 [profiles.celestial]
 center = ["active-window"]
-leading = ["apple-menu", "app-menu", "omniwm", "workspaces", "scratchpads"]
+leading = ["apple-menu", "app-menu", "omniwm", "clock", "workspaces", "scratchpads"]
 scheme = "tonalSpot"
 theme = "wallpaper"
-trailing = ["media", "notifications", "volume", "status", "control-center", "system-stats", "clock", "power"]
+trailing = ["media", "notifications", "volume", "status", "control-center", "system-stats", "power"]
 
 [profiles.celestial.island]
 fullscreen = "hide"
@@ -17,6 +17,11 @@ fullscreen = "hide"
 [profiles.celestial.widgets.clock]
 date = true
 icon = false
+
+[profiles.celestial.widgets.workspaces]
+compact = false
+indicator = "pills"
+occupiedBackground = false
 
 [profiles.celestial.workspaceBar]
 fullWidth = true
